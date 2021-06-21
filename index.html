@@ -9,50 +9,102 @@
 <body>
     <h1>Aulas de Hipermidia</h1>
     <h2>Preencha o formulário abaixo</h2>
+    <form method="get" action="abc.txt">
+        <form action="" id="dpessoais">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="">Nome:</label>
+                <input type="text" id="nome">
 
-    <form action="" id="dpessoais">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label for="">Nome:</label>
-            <input type="text" id="nome">
+                <label for="">Sobrenome:</label>
+                <input type="text" id="sobrenome"><br>
 
-            <label for="">Sobrenome:</label>
-            <input type="text" id="sobrenome"><br>
+                <label for="">Nascimento:</label>
+                <input type="text" id="dia" style="width: 20px;">
+                <input type="text" id="mes" style="width: 20px;">
+                <input type="text" id="ano" style="width: 20px;"><br>
 
-            <label for="">Nascimento:</label>
-            <input type="text" id="dia" style="width: 20px;">
-            <input type="text" id="mes" style="width: 20px;">
-            <input type="text" id="ano" style="width: 20px;"><br>
+                <label for="">RG:</label>
+                <input type="text" id="RG"><br>
 
-            <label for="">RG:</label>
-            <input type="text" id="RG"><br>
-
-            <label for="">CPF:</label>
-            <input type="text" id="CPF">
-            <input type="text" id="digito" style="width: 20px"><br>
+                <label for="">CPF:</label>
+                <input type="text" id="CPF">
+                <input type="text" id="digito" style="width: 20px"><br>
 
 
 
-        </fieldset>
+            </fieldset>
 
-    </form>
-    <form action="" id="dpessoais">
-        <fieldset>
-            <legend>Dados de Endereço</legend>
-        </fieldset>
+        </form>
+        <form action="" id="dpessoais">
+            <fieldset>
+                <legend>Dados de Endereço</legend>
+                <label for="rua">Rua:</label>
+                <input
+                type="text"
+                id="rua"
+                name="rua"
+                style="border-style: inset; border-style: inset"
+                />
+        
+                <label for="num">Numero:</label>
+                <input type="number" id="num"/><br/>
+        
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro"/><br/>
+                <label>Estado:
+                <select name="select">
+                    <option value="acre">Acre</option>
+                    <option value="rio" selected>Rio de janeiro</option>
+                    <option value="bahia">Bahia</option>
+                </select><br/>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade"/> </label><br/>
+                <label for="lname">CEP:</label>
+                <input type="text"/> -
+                <input type="text"/>
+            </fieldset>
 
-    </form>
-    <form action="" id="dpessoais">
-        <fieldset>
-            <legend>Dados de login</legend>
-        </fieldset>
+        </form>
+        <form action="" id="dpessoais">
+            <fieldset>
+                <legend>Dados de login</legend>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email"/><br/>
+                <label for="img">Imagem de perfil:</label>
+                <input type="file" id="img"/><br/>
+        
+                <label>Login de usuário:</label>
+                <input type="text"/><br /><br />
+                <label>Senha:</label>
+                <input type="password"/><br /><br />
+                <label>Confirme a senha:</label>
+                <input type="password"/><br/>
+            </fieldset>
 
-    </form>
-    <form action="" id="dpessoais">
-        <fieldset>
-            <legend>Pesquisa de Interesse</legend>
-        </fieldset>
+        </form>
+        <form action="" id="dpessoais">
+            <fieldset>
+                <legend>Pesquisa de Interesse</legend>
+                <label >Você deseja trabalhar como Webmaster?</label>
+                <input type="radio" value="sim"/> Sim<br/>
+                <input type="radio" value="não"/> Não<br/>
+                <input type="radio" value="talvez"/>Talvez <br/>
+                <input type="radio" value="quem sabe"/>Quem sabe <br/><br>
+                
+                <label >O que você deseja aprender?</label>
+                <input type="checkbox" value="html"/> HTML<br/>
+                <input type="checkbox" value="css"/> CSS<br/>
+                <input type="checkbox" value="javascript"/>JavaScript <br/>
+                <input type="checkbox" value="django"/>Django <br/><br>
 
-    </form>
+                <label for="comentario">Deixe seu comentário:</label>
+                <textarea id="comentario" rows="15" cols="45"></textarea>
+            </fieldset>
+
+        </form>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>    
+    </form>    
 </body>
 </html>
